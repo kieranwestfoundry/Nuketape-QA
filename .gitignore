@@ -1,0 +1,20 @@
+# Upstream / separately-versioned library clones — see README for how to get them
+libraries/griptape-nodes-library-standard/
+libraries/griptape-nodes-library-griptape-cloud/
+
+# Personal library, not part of this repo
+libraries/Kierans-Vibe-Library/
+
+# Engine-generated / per-machine
+.venv/
+.venv-*/
+__pycache__/
+outputs/
+temp/
+staticfiles/
+.griptape-nodes-metadata/
+.griptape-nodes-previews/
+
+# OS
+.DS_Store
+Thumbs.db

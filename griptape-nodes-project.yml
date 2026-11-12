@@ -1,0 +1,6 @@
+"project_template_schema_version": "1.0.0"
+"name": "Nuke Testing Project"
+"id": "nuke-testing-project-9a92af"
+"description": "A Project for NukeTape testing"
+"workspace_dir": "./"
+"libraries_dir": "./libraries"

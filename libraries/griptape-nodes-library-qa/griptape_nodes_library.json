@@ -1,0 +1,67 @@
+{
+  "name": "QA Test Nodes",
+  "library_schema_version": "0.3.0",
+  "metadata": {
+    "author": "Kieran West",
+    "description": "Local QA helper nodes and proxy test workflows for engine / Nuke bridge testing.",
+    "library_version": "0.1.0",
+    "engine_version": "0.104.0",
+    "tags": [
+      "QA",
+      "Testing"
+    ],
+    "dependencies": {
+      "pip_dependencies": []
+    }
+  },
+  "categories": [
+    {
+      "qa": {
+        "color": "border-red-500",
+        "title": "QA",
+        "description": "QA / test helper nodes",
+        "icon": "bug"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "class_name": "EmitLogSeverity",
+      "file_path": "qa_test_nodes/emit_log_severity.py",
+      "metadata": {
+        "category": "qa",
+        "description": "WARNING logs to the engine log. ERROR fails the node (NodeErrorEvent), which the Nuke bridge forwards.",
+        "display_name": "Emit Warning / Error",
+        "icon": "triangle-alert",
+        "group": "create",
+        "tags": [
+          "qa",
+          "debug",
+          "log",
+          "error",
+          "warning"
+        ]
+      }
+    }
+  ],
+  "workflows": [
+    "workflows/templates/proxy_edit_v001.py",
+    "workflows/templates/proxy_image_edit.py",
+    "workflows/templates/proxy_image_edit_branch_1.py",
+    "workflows/templates/proxy_image_edit_branch_2.py",
+    "workflows/templates/proxy_kling_motion_control.py",
+    "workflows/templates/proxy_motion_transfer.py",
+    "workflows/templates/proxy_seedance2_5_refrence.py",
+    "workflows/templates/proxy_seeddance2_5_image_ref_to_video.py",
+    "workflows/templates/proxy_splat_multiimages.py",
+    "workflows/templates/proxy_splat_text.py",
+    "workflows/templates/proxy_splat_video.py",
+    "workflows/templates/proxy_text_to_image.py",
+    "workflows/templates/proxy_text_to_video.py",
+    "workflows/templates/proxy_tripo_text_to_3d.py",
+    "workflows/templates/proxy_video_edit.py",
+    "workflows/templates/proxy_video_start_end_frame.py",
+    "workflows/templates/proxy_wan_animate.py",
+    "workflows/templates/proxy_wan_animate_move.py"
+  ]
+}
